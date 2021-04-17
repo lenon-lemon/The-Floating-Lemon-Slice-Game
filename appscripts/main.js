@@ -641,13 +641,13 @@ let oneLastThing = function(){
 	"fill": "#000000",
 	"opacity": 0
 	});
-	var chapterHeader = paper.text(pWidth/2, pHeight/2, "Epilogue: Lemons, Water, Iced Lemon Tea, and Industrial Application.").attr({"font-size": 25, "fill": "#000000", "opacity": 0}).animate({"y": pHeight/10, "opacity": 1},7000);
+	var chapterHeader = paper.text(pWidth/2, pHeight/2, "Epilogue: Lemons, Water, and Iced Lemon Tea.").attr({"font-size": 25, "fill": "#000000", "opacity": 0}).animate({"y": pHeight/10, "opacity": 1},7000);
 	var evaluateTime = Math.floor(bubbleTotalTime);
 	if (bubbleTotalTime < 120){
-		    finalText.attr({"text": `You have witnessed the birth of a patent's core.\n \nThe one thing to take away today would be the set of 3 requirements for patentability: \n(1) Novelty, \n(2) inventive step, and \n(3) industrial application.\n \nYou took a total of ${snekTotalTime} + ${bubbleTotalTime} seconds to clear the timed Act III and Act V respectively.\n That is a total of about ${evaluateTime} seconds! I give that an "A+"!\n \nScroll down for the final commentary!`});
+		    finalText.attr({"text": `You have witnessed the birth of a patent's core.\n \nYou took a total of about ${evaluateTime} seconds! I give that an "A+"!`});
 		    finalText.animate({"opacity":1}, 3000);
 	}else{
-		    finalText.attr({"text": `You have witnessed the birth of a patent's core.\n \nThe one thing to take away today would be the set of 3 requirements for patentability: \n(1) Novelty, \n(2) inventive step, and \n(3) industrial application.\n \nYou took a total of ${snekTotalTime} + ${bubbleTotalTime} seconds to clear the timed Act III and Act V respectively.\n That is a total of about ${evaluateTime} seconds! I give that an "A"!\n \nScroll down for the final commentary!`});
+		    finalText.attr({"text": `You have witnessed the birth of a patent's core.\n \nYou took a total of about ${evaluateTime} seconds! I give that an "A"!`});
 			finalText.animate({"opacity":1}, 3000);
 	};
 };			
